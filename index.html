@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css- for icons/all.css">
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <img src="./img/user.jpg" alt="" class="userpng">
+
+            <p class="formName">Contact Form</p>
+
+            <div class="box">
+                <p><label for="username">Name</label></p>
+                <input type="text" name="username" id="username" placeholder="Enter Name">
+                <span id="errorName"></span>
+            </div>
+
+            <div class="box">
+                <p><label for="useremail">Email</label></p>
+                <input type="email" name="useremail" id="useremail" placeholder="Enter Email">
+                <span id="errorEmail"></span>
+            </div>
+
+            <div class="box">
+                <p><label for="userpass">Password</label></p>
+                <input type="password" name="userpass" id="userpass" placeholder="Enter Password">
+                <span id="errorPass"></span>
+            </div>
+
+            <div>
+                <button class="btn" onclick="validate()">Sign-In</button>
+                <p id="Passed"></p>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
