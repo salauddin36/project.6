@@ -4,6 +4,8 @@ function validate(){
     let email=document.getElementById('useremail').value;
     let pass=document.getElementById('userpass').value;
 
+    var code =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    
     let errorname=document.getElementById('errorName');
     let erroremail=document.getElementById('errorEmail');
     let errorpass=document.getElementById('errorPass');
@@ -20,6 +22,9 @@ function validate(){
 
     if(email==''){
         erroremail.innerHTML="Please Enter Email "+' <i class="fa-sharp fa-solid fa-circle-exclamation"></i>';
+    }
+    else if(code.test(email)==false){
+        erroremail.innerHTML="Please Enter Valid Email "+' <i class="fa-sharp fa-solid fa-circle-exclamation"></i>'
     }
     else if(email!=''){
         erroremail.innerHTML='<i class="fa-solid fa-check"></i>';
