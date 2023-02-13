@@ -44,7 +44,7 @@ function validate(){
     }
     
     if(name!='' && email!='' && pass.length>=6){
-        alert('Thank You : '+ name + '\n' + " - Salauddin Ayubi");
-        passed.innerHTML="Your Response has been recorded : "+name+' <i class="fa-solid fa-check"></i>';
+        alert('Sign-In Successful :'+ name + '\n'+ '\n'  + " You have successfully signed into your account");
+        passed.innerHTML="Sign-In Successful : "+name+' <i class="fa-solid fa-check"></i>';
     }
 }
